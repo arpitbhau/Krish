@@ -189,29 +189,6 @@ function agreeDivMoveRandomAnimation() {
                 duration: 1.5
             })
 
-            tl.to(content, {
-                delay: 1.5,
-                OnComplete: function () {
-                    select(".yesContent").innerHTML += `
-                    <div class="watermark text-[skyblue] gap-5 flex-col hidden opacity-0 absolute right-0 w-full bottom-0 px-5 py-5 text-3xl justify-center items-end text-right" style="text-shadow: 0 0 10px skyblue;">
-                        <div class="flex gap-5">
-                            <div class="instaLink text-[blue] text-2xl font-['serif']" style="text-decoration: underline; text-shadow: none;"><a href="https://instagram.com/arpit_nikhade">Instagram Profile</a></div>
-                            <div class="githubLink text-[blue] text-2xl font-['serif']" style="text-decoration: underline; text-shadow: none;"><a href="https://github.com/arpitbhau">Github Profile</a></div>
-                        </div>
-                    </div>`
-                    select(".yesContent .watermark").innerHTML += `Created and Designed by Arpit 😐`
-
-                    let wtl = gsap.timeline()
-
-                    wtl.set(".watermark", { display: "flex" })
-
-                    wtl.to(".watermark", {
-                        opacity: 1,
-                        duration: .5,
-                        ease: Power4
-                    })
-                }
-            })
 
 
         })
